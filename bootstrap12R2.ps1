@@ -28,3 +28,5 @@ choco install puppet -y
 'autoflush = true' | add-content "C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
 'runinterval = 15m' | add-content "C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
  
+ restart-computer
+ 
