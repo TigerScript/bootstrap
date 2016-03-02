@@ -14,8 +14,6 @@ Write-Host '####################################################################
 #
 # Install Chocolatey
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-# Install WMF5
-iex ((new-object net.webclient).DownloadString('https://github.com/TigerScript/bootstrap/installwmf5.ps1'))
 # Install Puppet
 choco install puppet -y
 
@@ -28,5 +26,9 @@ choco install puppet -y
 'autoflush = true' | add-content "C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
 'runinterval = 15m' | add-content "C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
  
- restart-computer
- 
+# Install WMF5
+iex ((new-object net.webclient).DownloadString('https://github.com/TigerScript/bootstrap/installwmf5.ps1'))
+
+
+restart-computer
+
