@@ -27,8 +27,7 @@ choco install puppet -y
 'runinterval = 15m' | add-content "C:\ProgramData\PuppetLabs\puppet\etc\puppet.conf"
  
 # Install WMF5
-iex ((new-object net.webclient).DownloadString('https://github.com/TigerScript/bootstrap/installwmf5.ps1'))
-
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/TigerScript/bootstrap/master/installwmf5.ps1'))
 
 restart-computer
 
