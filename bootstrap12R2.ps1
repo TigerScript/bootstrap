@@ -29,5 +29,5 @@ choco install puppet -y
 # Install WMF5
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/TigerScript/bootstrap/master/installwmf5.ps1'))
 
-restart-computer
+Write-Host 'WMF5 is installing in the background, this machine will restart when completed.'
 
