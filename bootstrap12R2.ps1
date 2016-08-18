@@ -15,6 +15,7 @@ Write-Host '####################################################################
 # Install Chocolatey
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 # Install Puppet
+choco feature enable -n allowEmptyChecksums
 choco install puppet -y
 
 # Create Puppet Config to point to configuration platform
